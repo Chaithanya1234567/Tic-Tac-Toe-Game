@@ -140,7 +140,10 @@ public class LaunchGame {
  */
 	public static void main(String[] args) {
 		TicTacToe game=new TicTacToe();
-	Player p1=new Human("chay",'x');
+		System.out.println("Enter Your Name: ");
+		Scanner scan=new Scanner(System.in);
+		String name=scan.nextLine();
+	Player p1=new Human(name,'x');
 	Player p2=new AIPlayer("AI",'o');
 	Player cp;
 	cp=p1;
